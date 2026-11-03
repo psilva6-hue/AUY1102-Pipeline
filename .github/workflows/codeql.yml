@@ -28,12 +28,12 @@ jobs:
       contents: read
       security-events: write
 
-    strategy:
-    fail-fast: false
-    matrix:
-      language: [ 'javascript-typescript' ]
+strategy:
+      fail-fast: false
+      matrix:
+        language: [ 'javascript-typescript' ]
 
-    steps:
+   steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
